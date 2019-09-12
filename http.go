@@ -14,10 +14,10 @@ func main() {
     }
 
     fmt.Fprintf(os.Stdout, "Listening on :%s\n", port)
-    hostname, _ := os.Hostname()
+    //hostname, _ := os.Hostname()
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
         fmt.Fprintf(os.Stdout, "I'm %s\n", "Demo Host")
- 	fmt.Fprintf(w, "I'm %s\n", "Demo Host")
+ 	      fmt.Fprintf(w, "I'm %s\n", "Demo Host")
     })
 
 
